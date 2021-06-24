@@ -6,6 +6,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 const eqObjects = (objA, objB) => {
+  if (typeof objA !== 'object' || typeof objB !== 'object') {
+    throw new Error('This function can only compare objects');
+  }
   const keysA = Object.keys(objA);
   const keysB = Object.keys(objB);
   if (keysA.length !== keysB.length) return false;
@@ -31,6 +34,9 @@ const cd2 = {c: "1", d: ["2", 3, 4]};
 const oe = {c: "1", d: {2: [3, 5]}};
 const of = {d: {2: [3, 5]}, c: "1"};
 const og = {d: {2: [5, 3]}, c: "1"};
+const oh = {d: {2: [5, 3]}, c: "2"};
+// const aa = 5;
+// const bb = 6;
 
 console.log('PASS');
 assertEqual(ab, ba);
@@ -44,3 +50,7 @@ console.log('PASS');
 assertEqual(oe, of);
 console.log('FAIL');
 assertEqual(oe, og);
+console.log('FAIL');
+assertEqual(og, oh);
+// console.log('ERROR');
+// assertEqual(aa, bb);
