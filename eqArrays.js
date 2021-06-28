@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✔️  Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const eqArrays = (objA, objB) => {
   const keysA = Object.keys(objA);
   const keysB = Object.keys(objB);
@@ -27,7 +19,4 @@ const eqArrays = (objA, objB) => {
   return true;
 };
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([[[1, [2, [3]]]]], [[[1, [2, [3]]]]]), true);
-assertEqual(eqArrays(['1', [[['2', ['3']]]]], ['1', [[['2', [3]]]]]), false);
-assertEqual(eqArrays(['3'], [3]), false);
+module.exports = eqArrays;
