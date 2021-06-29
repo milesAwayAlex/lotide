@@ -1,11 +1,11 @@
-const assertEqual = (actual, expected) => {
+/* const assertEqual = (actual, expected) => {
   if (JSON.stringify(actual) === JSON.stringify(expected)) {
     console.log(`✔️  Assertion passed for ${JSON.stringify(actual)}`);
   } else {
     console.log(`🔴 Assertion failed for ${JSON.stringify(actual)}`);
   }
 };
-
+ */
 const findKey = (obj, cb) => {
   for (const key in obj) {
     if (Object.hasOwnProperty.call(obj, key)) {
@@ -13,8 +13,8 @@ const findKey = (obj, cb) => {
     }
   }
 };
-
-const res = findKey(
+module.exports = findKey;
+/* const res = findKey(
   {
     'Blue Hill': {stars: 1},
     Akaleri: {stars: 3},
@@ -30,3 +30,4 @@ const resB = findKey({a: 2, b: 8, c: 4}, x => x % 2 !== 0);
 
 assertEqual(res, exp);
 assertEqual(resB, undefined);
+ */

@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+/* const assertEqual = function(actual, expected) {
   if (JSON.stringify(actual) === JSON.stringify(expected)) {
     console.log(`✔️  Assertion passed for ${JSON.stringify(actual)}`);
   } else {
@@ -9,7 +9,7 @@ const assertEqual = function(actual, expected) {
     );
   }
 };
-
+ */
 const eqObjects = (objA, objB) => {
   const keysA = Object.keys(objA);
   const keysB = Object.keys(objB);
@@ -30,7 +30,8 @@ const eqObjects = (objA, objB) => {
   }
   return true;
 };
-
+module.exports = eqObjects;
+/*
 const ab = {a: '1', b: '2'};
 const ba = {b: '2', a: '1'};
 const abc = {a: '1', b: '2', c: '3'};
@@ -47,3 +48,4 @@ assertEqual(eqObjects(cd, dc), true);
 assertEqual(eqObjects(cd, cd2), false);
 assertEqual(eqObjects(oe, of), true);
 assertEqual(eqObjects(oe, og), false);
+ */

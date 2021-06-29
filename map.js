@@ -1,10 +1,10 @@
-const assertEqual = (actual, expected) => {
+/* const assertEqual = (actual, expected) => {
   if (JSON.stringify(actual) === JSON.stringify(expected)) {
     console.log(`✔️  Assertion passed for ${JSON.stringify(actual)}`);
   } else {
     console.log(`🔴 Assertion failed for ${JSON.stringify(actual)}`);
   }
-};
+}; */
 
 const map = (arr, cb) => {
   const res = [];
@@ -13,8 +13,8 @@ const map = (arr, cb) => {
   }
   return res;
 };
-
-const words = ['ground', 'control', 'to', 'major', 'tom'];
+module.exports = map;
+/* const words = ['ground', 'control', 'to', 'major', 'tom'];
 const results1 = map(words, word => word[0]);
 const exp1 = ['g', 'c', 't', 'm', 't'];
 const numbers = [1, 2, 3];
@@ -26,3 +26,4 @@ const exp3 = ['yup', 'yup', 'nada'];
 assertEqual(results1, exp1);
 assertEqual(results2, exp2);
 assertEqual(results3, exp3);
+ */
