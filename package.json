@@ -1,6 +1,6 @@
 {
   "name": "@milesawayalex/lotide",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An extremely basic utility library created for learning purposes",
   "main": "index.js",
   "directories": {
