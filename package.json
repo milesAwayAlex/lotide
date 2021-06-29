@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@milesawayalex/lotide",
+  "version": "0.1.0",
+  "description": "An extremely basic utility library created for learning purposes",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/milesAwayAlex/lotide.git"
   },
-  "author": "Alex Mozgovoy",
+  "author": "Alex M",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/milesAwayAlex/lotide/issues"
